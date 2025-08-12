@@ -1,0 +1,478 @@
+:root {
+  --animation-speed-slow: 8s;
+  --animation-speed-medium: 4s;
+  --animation-speed-fast: 0.5s;
+}
+
+@keyframes scanlineMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+.animate-scanlines {
+  animation: scanlineMove var(--animation-speed-fast) steps(4) infinite;
+}
+
+/* @keyframes glowPulse {
+  0% {
+    box-shadow: inset 0 0 50px rgba(144, 153, 93, 0.78),
+      inset 0 0 50px rgba(162, 243, 219, 0.3),
+      inset 0 0 50px rgba(100, 100, 255, 0.3);
+  }
+  50% {
+    box-shadow: inset 0 0 60px rgba(255, 100, 100, 0.4),
+      inset 0 0 60px rgba(181, 247, 181, 0.4),
+      inset 0 0 60px rgba(100, 100, 255, 0.4);
+  }
+  100% {
+    box-shadow: inset 0 0 50px rgba(255, 100, 100, 0.3),
+      inset 0 0 50px rgba(100, 255, 100, 0.3),
+      inset 0 0 50px rgba(100, 100, 255, 0.3);
+  }
+} */
+
+.animate-glow {
+  animation: glowPulse var(--animation-speed-medium) ease-in-out infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.4;
+  }
+  1% {
+    opacity: 0.2;
+  }
+  2% {
+    opacity: 0.4;
+  }
+  3% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.3;
+  }
+  6% {
+    opacity: 0.4;
+  }
+  7% {
+    opacity: 0.4;
+  }
+  8% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.2;
+  }
+  16% {
+    opacity: 0.4;
+  }
+  17% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  21% {
+    opacity: 0.3;
+  }
+  22% {
+    opacity: 0.4;
+  }
+  23% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  91% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+.animate-flicker {
+  animation: flicker 6s linear infinite;
+  filter: contrast(1.1) brightness(1);
+}
+
+@keyframes trackingDistortion {
+  0% {
+    transform: translateY(0vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.tracking-line {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.4) 15%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.6) 85%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  height: 20px;
+  animation: trackingDistortion 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  mix-blend-mode: overlay;
+  filter: contrast(1.9) brightness(1.8);
+}
+
+@keyframes horizontalWobble {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(-1px);
+  }
+}
+
+@keyframes verticalHold {
+  0% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(0);
+  }
+  97% {
+    transform: translateY(2px);
+  }
+  99% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-glow {
+  will-change: box-shadow;
+}
+
+.retro-card {
+  box-shadow: 0 0 10px rgba(74, 74, 143, 0.3),
+    inset 0 0 20px rgba(74, 74, 143, 0.2);
+  background: linear-gradient(135deg, #1a1a2e 0%, #2a2a4f 100%);
+  animation: cardPulse 4s ease-in-out infinite;
+  position: relative;
+}
+
+.retro-screen {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2), inset 0 0 8px rgba(0, 255, 0, 0.1);
+  background: #000;
+  position: relative;
+}
+
+.retro-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(transparent 50%, rgba(0, 255, 0, 0.05) 50%);
+  background-size: 100% 4px;
+  animation: scanlines 4s linear infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.retro-screen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+
+.retro-text {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.5);
+  animation: textGlow 2s ease-in-out infinite;
+}
+
+@keyframes scanlines {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+@keyframes cardPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(74, 74, 143, 0.3),
+      inset 0 0 20px rgba(74, 74, 143, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(74, 74, 143, 0.4),
+      inset 0 0 25px rgba(74, 74, 143, 0.3);
+  }
+}
+
+@keyframes textGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+      0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 10px rgb(15, 150, 240);
+  }
+}
+
+.border-trace::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 255, 255, 0.8) 25%,
+    rgba(255, 0, 255, 0.8) 50%,
+    rgba(0, 255, 255, 0.8) 75%,
+    transparent 100%
+  );
+  width: 400%;
+  animation: traceBorder 4s linear infinite;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(255, 0, 255, 0.4);
+  opacity: 0.4;
+}
+
+@keyframes traceBorder {
+  0% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.border-trace {
+  overflow: hidden;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  mask-composite: xor;
+  padding: 2px;
+  pointer-events: none;
+  border-radius: 8px;
+  animation: borderGlow 2s ease-in-out infinite;
+  position: relative;
+}
+
+.border-trace::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.1) 1px,
+    rgba(255, 255, 255, 0.05) 2px
+  );
+  animation: scanline 10ms linear infinite;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+@keyframes borderGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3), 0 0 10px rgba(255, 0, 255, 0.2),
+      0 0 15px rgba(0, 255, 255, 0.1), inset 0 0 5px rgba(255, 0, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.4), 0 0 20px rgba(0, 255, 255, 0.3),
+      0 0 30px rgba(255, 0, 255, 0.2), inset 0 0 10px rgba(0, 255, 255, 0.2);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(3px);
+  }
+}
+
+/* Secondary border on hover */
+.retro-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: border-color 1s ease-in-out;
+  z-index: 100;
+}
+
+.retro-card:hover::after {
+  border-color: rgb(78, 197, 152);
+}
+
+@keyframes playPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes textPulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-playPulse {
+  animation: playPulse 2s infinite;
+}
+
+.play-text {
+  display: inline-block;
+  animation: textPulse 3s ease-in-out infinite;
+}
+
+/* Enable animation on desktop */
+@media (min-width: 769px) {
+  .retro-screen::before {
+    animation: scanlines 4s linear infinite;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Disable Scanline Animation */
+  .retro-screen::before {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto !important;
+  }
+
+  /* Disable Tracking Distortion Effect */
+  .tracking-line {
+    display: none !important;
+  }
+
+  /* Disable Flicker Animation */
+  .animate-flicker {
+    animation: none !important;
+    filter: none !important;
+  }
+
+  /* Disable Wobble Effects */
+  .animate-horizontalWobble {
+    animation: none !important;
+  }
+
+  .animate-verticalHold {
+    animation: none !important;
+  }
+
+  /* Disable Glow Effect */
+  .animate-glow {
+    animation: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Remove Expensive Filters */
+  .tracking-line {
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+
+  /* Disable mix-blend-mode Effects */
+  .retro-screen::before,
+  .animate-scanlines,
+  .animate-flicker {
+    mix-blend-mode: normal !important;
+  }
+
+  /* Reduce Box Shadow Complexity */
+  .retro-card {
+    box-shadow: 0 0 5px rgba(74, 74, 143, 0.2),
+      inset 0 0 10px rgba(74, 74, 143, 0.1);
+  }
+
+  .retro-screen {
+    box-shadow: none !important;
+  }
+
+  /* Ensure Static Retro Look */
+  .retro-text {
+    opacity: 0.85;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+  }
+
+  .retro-screen::before {
+    display: block;
+    opacity: 0.6;
+    mix-blend-mode: normal !important;
+  }
+}
+
+@supports (-webkit-backdrop-filter: blur(5px)) {
+  .retro-card {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+}
+
+@media (max-width: 768px) {
+  .retro-card {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}

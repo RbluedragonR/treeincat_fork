@@ -1,0 +1,396 @@
+{
+  "background": [
+    {
+      "filename": "a-original.png",
+      "path": "/images/pfpbuilder/background/a-original.png"
+    },
+    {
+      "filename": "bg_1.png",
+      "path": "/images/pfpbuilder/background/bg_1.png"
+    },
+    {
+      "filename": "bg_10.png",
+      "path": "/images/pfpbuilder/background/bg_10.png"
+    },
+    {
+      "filename": "bg_11.png",
+      "path": "/images/pfpbuilder/background/bg_11.png"
+    },
+    {
+      "filename": "bg_12.png",
+      "path": "/images/pfpbuilder/background/bg_12.png"
+    },
+    {
+      "filename": "bg_13.png",
+      "path": "/images/pfpbuilder/background/bg_13.png"
+    },
+    {
+      "filename": "bg_14.png",
+      "path": "/images/pfpbuilder/background/bg_14.png"
+    },
+    {
+      "filename": "bg_15.png",
+      "path": "/images/pfpbuilder/background/bg_15.png"
+    },
+    {
+      "filename": "bg_2.png",
+      "path": "/images/pfpbuilder/background/bg_2.png"
+    },
+    {
+      "filename": "bg_3.png",
+      "path": "/images/pfpbuilder/background/bg_3.png"
+    },
+    {
+      "filename": "bg_4.png",
+      "path": "/images/pfpbuilder/background/bg_4.png"
+    },
+    {
+      "filename": "bg_5.png",
+      "path": "/images/pfpbuilder/background/bg_5.png"
+    },
+    {
+      "filename": "bg_6.png",
+      "path": "/images/pfpbuilder/background/bg_6.png"
+    },
+    {
+      "filename": "bg_7.png",
+      "path": "/images/pfpbuilder/background/bg_7.png"
+    },
+    {
+      "filename": "bg_8.png",
+      "path": "/images/pfpbuilder/background/bg_8.png"
+    },
+    {
+      "filename": "bg_9.png",
+      "path": "/images/pfpbuilder/background/bg_9.png"
+    },
+    {
+      "filename": "gradient (10).png",
+      "path": "/images/pfpbuilder/background/gradient (10).png"
+    },
+    {
+      "filename": "gradient (11).png",
+      "path": "/images/pfpbuilder/background/gradient (11).png"
+    },
+    {
+      "filename": "gradient (12).png",
+      "path": "/images/pfpbuilder/background/gradient (12).png"
+    },
+    {
+      "filename": "gradient (13).png",
+      "path": "/images/pfpbuilder/background/gradient (13).png"
+    },
+    {
+      "filename": "gradient (6).png",
+      "path": "/images/pfpbuilder/background/gradient (6).png"
+    },
+    {
+      "filename": "gradient (7).png",
+      "path": "/images/pfpbuilder/background/gradient (7).png"
+    },
+    {
+      "filename": "gradient (8).png",
+      "path": "/images/pfpbuilder/background/gradient (8).png"
+    },
+    {
+      "filename": "gradient (9).png",
+      "path": "/images/pfpbuilder/background/gradient (9).png"
+    }
+  ],
+  "outline": [
+    {
+      "filename": "TIC_0000_Outline.png",
+      "path": "/images/pfpbuilder/outline/TIC_0000_Outline.png"
+    }
+  ],
+  "fur": [
+    {
+      "filename": "TIC_0007s_0002_Original.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0002_Original.png"
+    },
+    {
+      "filename": "TIC_0007s_0000_Shadow-Layer-copy.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0000_Shadow-Layer-copy.png"
+    },
+    {
+      "filename": "TIC_0007s_0001_Hairy-Lemon.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0001_Hairy-Lemon.png"
+    },
+    {
+      "filename": "TIC_0007s_0003_Shadow.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0003_Shadow.png"
+    },
+    {
+      "filename": "TIC_0007s_0004_BlueGrey-white-stripes.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0004_BlueGrey-white-stripes.png"
+    },
+    {
+      "filename": "TIC_0007s_0005_DarkGrey-white-stripes.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0005_DarkGrey-white-stripes.png"
+    },
+    {
+      "filename": "TIC_0007s_0007_Garfield.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0007_Garfield.png"
+    },
+    {
+      "filename": "TIC_0007s_0008_Grey-Stripes.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0008_Grey-Stripes.png"
+    },
+    {
+      "filename": "TIC_0007s_0009_Black-Garflied.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0009_Black-Garflied.png"
+    },
+    {
+      "filename": "TIC_0007s_0010_Black-Red-Ears.png",
+      "path": "/images/pfpbuilder/fur/TIC_0007s_0010_Black-Red-Ears.png"
+    },
+    {
+      "filename": "_0007s_0001_Grey-Off-White.png",
+      "path": "/images/pfpbuilder/fur/_0007s_0001_Grey-Off-White.png"
+    }
+  ],
+  "clothes": [
+    {
+      "filename": "TIC_0005s_0000_Red-Sportfit.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0000_Red-Sportfit.png"
+    },
+    {
+      "filename": "TIC_0005s_0001_Hippy-Shirt.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0001_Hippy-Shirt.png"
+    },
+    {
+      "filename": "TIC_0005s_0002_Black-Leather-Jacket.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0002_Black-Leather-Jacket.png"
+    },
+    {
+      "filename": "TIC_0005s_0003_Hawaiian-Shirt.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0003_Hawaiian-Shirt.png"
+    },
+    {
+      "filename": "TIC_0005s_0004_McDonalds.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0004_McDonalds.png"
+    },
+    {
+      "filename": "TIC_0005s_0005_Racing-Palm-Angels.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0005_Racing-Palm-Angels.png"
+    },
+    {
+      "filename": "TIC_0005s_0006_Blue-Tracksuit.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0006_Blue-Tracksuit.png"
+    },
+    {
+      "filename": "TIC_0005s_0007_Pants-with-Suspends-and-Tanktop.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0007_Pants-with-Suspends-and-Tanktop.png"
+    },
+    {
+      "filename": "TIC_0005s_0008_Blue-Pants-and-Suspenders.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0008_Blue-Pants-and-Suspenders.png"
+    },
+    {
+      "filename": "TIC_0005s_0009_Scotish-Kilt.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0009_Scotish-Kilt.png"
+    },
+    {
+      "filename": "TIC_0005s_0010_Brown-Suit-and-Tie.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0010_Brown-Suit-and-Tie.png"
+    },
+    {
+      "filename": "TIC_0005s_0011_India-Jones.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0011_India-Jones.png"
+    },
+    {
+      "filename": "TIC_0005s_0012_Shirt---Black---Skull.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0012_Shirt---Black---Skull.png"
+    },
+    {
+      "filename": "TIC_0005s_0013_Karate-Kimono.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0013_Karate-Kimono.png"
+    },
+    {
+      "filename": "TIC_0005s_0014_Black-Suit-and-Tie.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0014_Black-Suit-and-Tie.png"
+    },
+    {
+      "filename": "TIC_0005s_0015_Shirt---Blue---Always-Happy.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0015_Shirt---Blue---Always-Happy.png"
+    },
+    {
+      "filename": "TIC_0005s_0016_Shirt---Green.png",
+      "path": "/images/pfpbuilder/clothes/TIC_0005s_0016_Shirt---Green.png"
+    },
+    {
+      "filename": "_0005s_0000_Hippy-Outift.png",
+      "path": "/images/pfpbuilder/clothes/_0005s_0000_Hippy-Outift.png"
+    },
+    {
+      "filename": "_0005s_0000_Roman-Cloth.png",
+      "path": "/images/pfpbuilder/clothes/_0005s_0000_Roman-Cloth.png"
+    }
+  ],
+  "mouth": [
+    {
+      "filename": "TIC_0004s_0005_Original.png",
+      "path": "/images/pfpbuilder/mouth/TIC_0004s_0005_Original.png"
+    },
+    {
+      "filename": "TIC_0004s_0000_Surprised.png",
+      "path": "/images/pfpbuilder/mouth/TIC_0004s_0000_Surprised.png"
+    },
+    {
+      "filename": "TIC_0004s_0001_Cat-Teeth-Shouth.png",
+      "path": "/images/pfpbuilder/mouth/TIC_0004s_0001_Cat-Teeth-Shouth.png"
+    },
+    {
+      "filename": "TIC_0004s_0002_Layer-26.png",
+      "path": "/images/pfpbuilder/mouth/TIC_0004s_0002_Layer-26.png"
+    },
+    {
+      "filename": "TIC_0004s_0003_Tongue.png",
+      "path": "/images/pfpbuilder/mouth/TIC_0004s_0003_Tongue.png"
+    },
+    {
+      "filename": "TIC_0004s_0004_Smiling.png",
+      "path": "/images/pfpbuilder/mouth/TIC_0004s_0004_Smiling.png"
+    }
+  ],
+  "eyes": [
+    {
+      "filename": "TIC_0003s_0000_Original.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0000_Original.png"
+    },
+    {
+      "filename": "TIC_0003s_0001Angry.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0001Angry.png"
+    },
+    {
+      "filename": "TIC_0003s_0002_Surprised.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0002_Surprised.png"
+    },
+    {
+      "filename": "TIC_0003s_0003_Kitten-Eyes---Blue.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0003_Kitten-Eyes---Blue.png"
+    },
+    {
+      "filename": "TIC_0003s_0004_Kitten-Eyes---Green.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0004_Kitten-Eyes---Green.png"
+    },
+    {
+      "filename": "TIC_0003s_0005_Kitten-Eyes---Blue-2.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0005_Kitten-Eyes---Blue-2.png"
+    },
+    {
+      "filename": "TIC_0003s_0006_Kitten-Eyes---Orange.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0006_Kitten-Eyes---Orange.png"
+    },
+    {
+      "filename": "TIC_0003s_0007_Kitten-Eyes-2---Blue.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0007_Kitten-Eyes-2---Blue.png"
+    },
+    {
+      "filename": "TIC_0003s_0008_Kitten-Eyes-2---Green.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0008_Kitten-Eyes-2---Green.png"
+    },
+    {
+      "filename": "TIC_0003s_0009_Kitten-Eyes-2---Purple.png",
+      "path": "/images/pfpbuilder/eyes/TIC_0003s_0009_Kitten-Eyes-2---Purple.png"
+    }
+  ],
+  "eye_accessories": [
+    {
+      "filename": "TIC_0002s_0000_Nerd-Glasses.png",
+      "path": "/images/pfpbuilder/eye_accessories/TIC_0002s_0000_Nerd-Glasses.png"
+    },
+    {
+      "filename": "TIC_0002s_0001_Laser-Monocle.png",
+      "path": "/images/pfpbuilder/eye_accessories/TIC_0002s_0001_Laser-Monocle.png"
+    },
+    {
+      "filename": "TIC_0002s_0002_glasses-aviators.png",
+      "path": "/images/pfpbuilder/eye_accessories/TIC_0002s_0002_glasses-aviators.png"
+    },
+    {
+      "filename": "TIC_0002s_0003_Eye-Patch.png",
+      "path": "/images/pfpbuilder/eye_accessories/TIC_0002s_0003_Eye-Patch.png"
+    },
+    {
+      "filename": "TIC_0002s_0004_Layer-16.png",
+      "path": "/images/pfpbuilder/eye_accessories/TIC_0002s_0004_Layer-16.png"
+    },
+    {
+      "filename": "_0002s_0000_Bling-Glases.png",
+      "path": "/images/pfpbuilder/eye_accessories/_0002s_0000_Bling-Glases.png"
+    },
+    {
+      "filename": "_0002s_0000_Future-Glasses.png",
+      "path": "/images/pfpbuilder/eye_accessories/_0002s_0000_Future-Glasses.png"
+    }
+  ],
+  "trees": [
+    {
+      "filename": "TIC_0001s_0002_Original.png",
+      "path": "/images/pfpbuilder/trees/TIC_0001s_0002_Original.png"
+    },
+    {
+      "filename": "TIC_0001s_0000_Layer-27.png",
+      "path": "/images/pfpbuilder/trees/TIC_0001s_0000_Layer-27.png"
+    },
+    {
+      "filename": "TIC_0001s_0001_Blue-Magic-Tree.png",
+      "path": "/images/pfpbuilder/trees/TIC_0001s_0001_Blue-Magic-Tree.png"
+    },
+    {
+      "filename": "TIC_0001s_0003_Birch-Tree.png",
+      "path": "/images/pfpbuilder/trees/TIC_0001s_0003_Birch-Tree.png"
+    },
+    {
+      "filename": "TIC_0001s_0004_Red-Maple-Tree.png",
+      "path": "/images/pfpbuilder/trees/TIC_0001s_0004_Red-Maple-Tree.png"
+    },
+    {
+      "filename": "TIC_0001s_0005_Boabab-Tree.png",
+      "path": "/images/pfpbuilder/trees/TIC_0001s_0005_Boabab-Tree.png"
+    },
+    {
+      "filename": "TIC_0001s_0006_Boabab-Tree-2.png",
+      "path": "/images/pfpbuilder/trees/TIC_0001s_0006_Boabab-Tree-2.png"
+    },
+    {
+      "filename": "TIC_0001s_0007_Weeping-Willow-Tree.png",
+      "path": "/images/pfpbuilder/trees/TIC_0001s_0007_Weeping-Willow-Tree.png"
+    },
+    {
+      "filename": "_0001s_0000_Crazy-Tree.png",
+      "path": "/images/pfpbuilder/trees/_0001s_0000_Crazy-Tree.png"
+    }
+  ],
+  "hats": [
+    {
+      "filename": "TIC_0000s_0000_Red-Band-2.png",
+      "path": "/images/pfpbuilder/hats/TIC_0000s_0000_Red-Band-2.png"
+    },
+    {
+      "filename": "TIC_0000s_0001_Blue-Band.png",
+      "path": "/images/pfpbuilder/hats/TIC_0000s_0001_Blue-Band.png"
+    },
+    {
+      "filename": "TIC_0000s_0002_Red-Band.png",
+      "path": "/images/pfpbuilder/hats/TIC_0000s_0002_Red-Band.png"
+    },
+    {
+      "filename": "TIC_0000s_0003_Layer-20.png",
+      "path": "/images/pfpbuilder/hats/TIC_0000s_0003_Layer-20.png"
+    },
+    {
+      "filename": "_0000s_0000_Baseball-Hat.png",
+      "path": "/images/pfpbuilder/hats/_0000s_0000_Baseball-Hat.png"
+    },
+    {
+      "filename": "_0000s_0000_Glasses.png",
+      "path": "/images/pfpbuilder/hats/_0000s_0000_Glasses.png"
+    },
+    {
+      "filename": "_0000s_0000_Top-hat.png",
+      "path": "/images/pfpbuilder/hats/_0000s_0000_Top-hat.png"
+    }
+  ]
+}

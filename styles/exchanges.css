@@ -1,0 +1,240 @@
+/* #region Optimized Gradient Text - Performance Fix */
+@keyframes starry-glow {
+  0%,
+  100% {
+    filter: hue-rotate(0deg) brightness(1.1) saturate(1.2);
+    text-shadow: 0 0 10px rgba(127, 183, 252, 0.6),
+      0 0 20px rgba(131, 238, 110, 0.4), 0 0 30px rgba(255, 198, 228, 0.3);
+  }
+  25% {
+    filter: hue-rotate(15deg) brightness(1.2) saturate(1.4);
+    text-shadow: 0 0 15px rgba(131, 238, 110, 0.7),
+      0 0 25px rgba(255, 198, 228, 0.5), 0 0 35px rgba(102, 253, 127, 0.4);
+  }
+  50% {
+    filter: hue-rotate(30deg) brightness(1.3) saturate(1.5);
+    text-shadow: 0 0 12px rgba(255, 198, 228, 0.8),
+      0 0 22px rgba(102, 253, 127, 0.6), 0 0 32px rgba(162, 204, 255, 0.4);
+  }
+  75% {
+    filter: hue-rotate(45deg) brightness(1.2) saturate(1.3);
+    text-shadow: 0 0 18px rgba(102, 253, 127, 0.7),
+      0 0 28px rgba(162, 204, 255, 0.5), 0 0 38px rgba(127, 183, 252, 0.3);
+  }
+}
+
+/* Legacy gradient-flow class - redirect to optimized version */
+.animate-gradient-flow {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    #7fb7fc 0%,
+    #83ee6e 25%,
+    #ffc6e4 50%,
+    #66fd7f 75%,
+    #a2ccff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  will-change: filter, text-shadow;
+}
+
+/* Mobile: Static gradient only */
+@media (max-width: 767px) {
+  .animate-gradient-flow {
+    filter: brightness(1.2) saturate(1.3);
+    text-shadow: 0 0 8px rgba(127, 183, 252, 0.5),
+      0 0 16px rgba(131, 238, 110, 0.3), 0 0 24px rgba(255, 198, 228, 0.2);
+  }
+}
+
+/* Desktop: Efficient animation */
+@media (min-width: 768px) {
+  .animate-gradient-flow {
+    animation: starry-glow 6s ease-in-out infinite;
+  }
+}
+
+/* Reduced motion: Static gradient only */
+@media (prefers-reduced-motion: reduce) {
+  .animate-gradient-flow {
+    animation: none !important;
+    filter: brightness(1.2) saturate(1.3);
+    text-shadow: 0 0 10px rgba(127, 183, 252, 0.6),
+      0 0 20px rgba(131, 238, 110, 0.4), 0 0 30px rgba(255, 198, 228, 0.3);
+  }
+}
+/* #endregion */
+
+/* #region Sun Gradient Overlay */
+
+.sun-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 220, 150, 0.6) 0%,
+    rgba(255, 100, 100, 0.4) 30%,
+    transparent 70%
+  );
+  mask-image: url("/images/exchanges/TIC-behind.webp");
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-composite: intersect;
+  mix-blend-mode: hard-light;
+  animation: sun-pulse 8s ease-in-out infinite;
+}
+
+/* Mobile Optimization: Reduce Effect or Hide */
+@media (max-width: 768px) {
+  .sun-gradient-overlay {
+    background: none;
+    opacity: 1; /* Make it less aggressive */
+    animation: none; /* Remove animation for better performance */
+    mask-image: none; /* Remove masking if it causes issues */
+    mix-blend-mode: initial; /* Prevent unwanted blending on mobile */
+  }
+}
+
+/* Keep full animation and mask effect for larger screens */
+@media (min-width: 768px) {
+  .sun-gradient-overlay {
+    animation: sun-pulse 8s ease-in-out infinite;
+  }
+}
+
+@keyframes sun-pulse {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) translateY(-10px);
+  }
+}
+
+/* #endregion */
+
+/* #region TIC Animation */
+
+.animate-tic-float {
+  animation: tic-float 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes tic-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* #endregion */
+
+/* #region Tokenomics Animation */
+@keyframes tokenomics-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0.5deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-0.5deg);
+  }
+}
+
+.animate-tokenomics-float {
+  animation: tokenomics-float 6s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.tic-float {
+  animation: tic-float 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* #endregion */
+
+/* #region Exchange & Wallet Logos Animation */
+
+@keyframes exchange-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes wallet-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-exchange-float,
+.animate-wallet-float {
+  animation: exchange-float 4s ease-in-out infinite;
+
+  /* ✅ Optimization for Safari */
+  will-change: transform;
+  transform: translateY(0);
+  /* backface-visibility: hidden;
+  perspective: 1000px; */
+}
+
+/* #endregion */
+
+/* #region Gradient Animation */
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+}
+
+.animate-gradient-slow {
+  animation: gradient 15s ease infinite;
+  will-change: background-position;
+  background-size: 400% 400%;
+}
+
+@keyframes navBgAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* #endregion */
+
+.animate-nav-bg {
+  animation: navBgAnimation 15s ease infinite;
+  will-change: background-position;
+}
