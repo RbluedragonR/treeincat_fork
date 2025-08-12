@@ -496,7 +496,7 @@
                   "absolute bottom-[0%] sm:bottom-[3%] -right-[6%] z-[1] w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[500px]  cursor-pointer",
                 style: { willChange: "transform, opacity" },
                 children: (0, a.jsx)(c(), {
-                  href: "/gallery",
+                  href: "",
                   children: (0, a.jsx)(i.default, {
                     src: "/images/art/art_camera.webp",
                     alt: "Camera - Click to view gallery",
@@ -554,10 +554,10 @@
           let { buttonRef: t } = e;
           return (0, a.jsx)("div", {
             ref: t,
-            className: "absolute bottom-[5%] left-1/2 -translate-x-1/2 z-[10]",
+            className: "hidden absolute bottom-[5%] left-1/2 -translate-x-1/2 z-[10]",
             style: { willChange: "transform, opacity" },
             children: (0, a.jsx)(c(), {
-              href: "/gallery",
+              href: "",
               className: "inline-block group",
               children: (0, a.jsxs)("div", {
                 className:
@@ -568,7 +568,7 @@
                 },
                 children: [
                   (0, a.jsxs)("div", {
-                    className: " relative z-10 flex items-center",
+                    className: "hidden relative z-10 flex items-center",
                     children: [
                       (0, a.jsx)("span", {
                         className: "mr-2",
@@ -687,11 +687,12 @@
               (0, a.jsx)(j, { ticRef: C }),
               (0, a.jsx)(h, {}),
               (0, a.jsxs)("div", {
-                className: "relative min-h-screen w-full overflow-hidden",
+                className: " relative min-h-screen w-full overflow-hidden",
                 children: [
                   (0, a.jsx)(b, { titleRef: k }),
                   (0, a.jsx)(v, { cameraRef: z, cupRef: E }),
                   // i && e.map((e) => (0, a.jsx)(g, { ...e }, e.uniqueId)),
+                  (0, a.jsx)("img", { src: "/_next/image/TIC keeps building.png", alt: "TIC", className: "z-30 w-full  flex items-center top-[-5vh] sm:top-[-10vh] md:top-[-10vh] lg:top-[-1vh] xl:top-[-15vh] 2xl:top-[-10vh]" }),
                   (0, a.jsx)(N, { buttonRef: R }),
                 ],
               }),

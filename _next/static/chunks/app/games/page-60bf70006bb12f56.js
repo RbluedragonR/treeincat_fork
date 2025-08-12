@@ -514,7 +514,8 @@
                               children:
                                 "Help the Cat catch falling seeds and grow the forest! Dodge crypto baddies and collect power-ups in this exciting arcade game, or a tree might get stuck in you!",
                             }),
-                            (0, r.jsx)("div", {
+                            (0, r.jsx)("a", {
+                              href: "https://seed-catcher-game.vercel.app/",
                               target: e ? void 0 : "_blank",
                               rel: e ? void 0 : "noopener noreferrer",
                               onClick: (t) => {
@@ -522,7 +523,7 @@
                               },
                               className: p,
                               "aria-label": "Play Seed Catcher",
-                              children: "Coming Soon",
+                              children: "PLAY GAME",
                             }),
                           ],
                         }),
@@ -603,7 +604,8 @@
                               children:
                                 "Jump from branch to branch as the Cat explores the treetops. Test your timing and agility in this challenging platformer while avoiding other memes.",
                             }),
-                            (0, r.jsx)("div", {                             
+                            (0, r.jsx)("a", {        
+                              href: "https://branch-hopper-game-fork.vercel.app/",                     
                               target: e ? void 0 : "_blank",
                               rel: e ? void 0 : "noopener noreferrer",
                               onClick: (t) => {
@@ -611,7 +613,7 @@
                               },
                               className: p,
                               "aria-label": "Play Branch Hopper",
-                              children: "Coming Soon",
+                              children: "PLAY GAME",
                             }),
                           ],
                         }),

@@ -172,7 +172,7 @@
             description:
               "Help the Cat catch falling seeds and grow the forest! Dodge crypto baddies and collect power-ups in this exciting arcade game, or a tree might get stuck in you!",
             image: "/images/games/seed_catcher_splash.webp",
-            playLink: "https://seedcatcher.treeincat.com/",
+            playLink: "https://seed-catcher-game.vercel.app/",
           },
           {
             id: 2,
@@ -180,7 +180,7 @@
             description:
               "Jump from branch to branch as the Cat explores the treetops. Test your timing and agility in this challenging platformer while avoiding other memes.",
             image: "/images/games/branch_hopper_splash.webp",
-            playLink: "https://branchhopper.treeincat.com/",
+            playLink: "https://branch-hopper-game-fork.vercel.app/",
           },
         ],
         p = () => {

@@ -155,32 +155,32 @@
                                 height: 32,
                               }),
                             }),
-                            (0, i.jsx)("a", {
-                              href: "https://coinmarketcap.com/currencies/tree-stuck-in-cat/",
-                              target: "_blank",
-                              rel: "noopener noreferrer",
-                              className:
-                                "jsx-b52865eabed81f40 social-icon-mobile",
-                              children: (0, i.jsx)(s.default, {
-                                src: "/images/navbar/cmc_logo.webp",
-                                alt: "CoinMarketCap",
-                                width: 32,
-                                height: 32,
-                              }),
-                            }),
-                            (0, i.jsx)("a", {
-                              href: "https://www.coingecko.com/en/coins/tree-stuck-in-cat",
-                              target: "_blank",
-                              rel: "noopener noreferrer",
-                              className:
-                                "jsx-b52865eabed81f40 social-icon-mobile",
-                              children: (0, i.jsx)(s.default, {
-                                src: "/images/navbar/cg_logo.webp",
-                                alt: "CoinGecko",
-                                width: 32,
-                                height: 32,
-                              }),
-                            }),
+                            // (0, i.jsx)("a", {
+                            //   href: "https://coinmarketcap.com/currencies/tree-stuck-in-cat/",
+                            //   target: "_blank",
+                            //   rel: "noopener noreferrer",
+                            //   className:
+                            //     "jsx-b52865eabed81f40 social-icon-mobile",
+                            //   children: (0, i.jsx)(s.default, {
+                            //     src: "/images/navbar/cmc_logo.webp",
+                            //     alt: "CoinMarketCap",
+                            //     width: 32,
+                            //     height: 32,
+                            //   }),
+                            // }),
+                            // (0, i.jsx)("a", {
+                            //   href: "https://www.coingecko.com/en/coins/tree-stuck-in-cat",
+                            //   target: "_blank",
+                            //   rel: "noopener noreferrer",
+                            //   className:
+                            //     "jsx-b52865eabed81f40 social-icon-mobile",
+                            //   children: (0, i.jsx)(s.default, {
+                            //     src: "/images/navbar/cg_logo.webp",
+                            //     alt: "CoinGecko",
+                            //     width: 32,
+                            //     height: 32,
+                            //   }),
+                            // }),
                           ],
                         }),
                       ],
